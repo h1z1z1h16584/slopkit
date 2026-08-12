@@ -4,9 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>slopkit</title>
-<link rel="preload" href="cat.jpg" as="image">
-<link rel="preload" href="mmhmm-cats-ps5.gif" as="image">
 <link rel="preload" href="success.jpg" as="image">
+<link rel="preload" href="mmhmm-cats-ps5.gif" as="image">
 
 <script>(function () {
     var pending = [];
@@ -199,13 +198,10 @@
 <pre id="scr"></pre>
 <div id="payloadMenu">
   <img class="menuTitle" data-src="../ui/payload-menu-title.png" alt="">
-  <a class="payloadTile" href="#" data-name="ftpsrv-ps5.elf" data-key="ftp"><img data-src="../ui/payload-ftp-default.png" alt=""></a>
   <a class="payloadTile" href="#" data-name="kstuff.elf" data-key="kstuff"><img data-src="../ui/payload-kstuff-default.png" alt=""></a>
-  <a class="payloadTile" href="#" data-name="shadowmountplus.elf" data-key="SM"><img data-src="../ui/payload-SM-default.png" alt=""></a>
-  <a class="payloadTile" href="#" data-name="gdbsrv-ps5.elf" data-key="gdb"><img data-src="../ui/payload-gdb-default.png" alt=""></a>
-  <a class="payloadTile" href="#" data-name="klogsrv-ps5.elf" data-key="klog"><img data-src="../ui/payload-klog-default.png" alt=""></a>
-  <a class="payloadTile" href="#" data-name="shsrv-ps5.elf" data-key="shell"><img data-src="../ui/payload-shell-default.png" alt=""></a>
-  <a class="payloadTile" href="#" data-name="websrv-ps5.elf" data-key="web"><img data-src="../ui/payload-web-default.png" alt=""></a>
+  <a class="payloadTile" href="#" data-name="shadowmountplus.elf" data-key="shadowmountplus"><img data-src="../ui/payload-shadowmountplus-default.png" alt=""></a>
+  <a class="payloadTile" href="#" data-name="ftpsrv-ps5.elf" data-key="ftp"><img data-src="../ui/payload-ftp-default.png" alt=""></a>
+  <a class="payloadTile" href="#" data-name="autoloader.elf" data-key="autoloader"><img data-src="../ui/payload-autoloader-default.png" alt=""></a>
 </div>
 <div id="nav"></div>
 <div id="arm" hidden>Open this page with <b>?go=1</b> to arm it. Nothing runs
@@ -732,7 +728,7 @@ function setCatResult(success) {
         cat.className = success ? "ok" : "bad";
         if (success) {
             const image = document.getElementById("catImage");
-            if (image) image.src = "success.jpg";
+            if (image) image.src = "cat.jpg";
         }
     }
 }
